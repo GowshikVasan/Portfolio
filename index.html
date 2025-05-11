@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowshik Vasan - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+
+  <!-- Navigation -->
+  <header id="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon">
+          <div class="logo-glow"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <path d="M16 18l6-6-6-6"></path>
+            <path d="M8 6l-6 6 6 6"></path>
+          </svg>
+        </div>
+        <h1>Gowshik <span class="highlight">Vasan</span></h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="menu-content">
+      <div class="close-btn">&times;</div>
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="overlay"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-elements">
+      <div class="bg-element-1"></div>
+      <div class="bg-element-2"></div>
+      <div class="grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text animate-fade-in" data-delay="0.2">
+          <div class="glassmorphism">
+            <p class="intro-text">Hello, I'm <span class="cursor-line"></span></p>
+            <h2 class="name">Gowshik <span class="highlight">Vasan</span></h2>
+            <h3 class="title">Aspiring <span class="highlight">Software Developer</span></h3>
+            <p class="description">
+              Passionate about Python, Machine Learning, and building intelligent systems that solve real-world problems.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn primary-btn">
+                View My Work
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="https://drive.google.com/file/d/139yhM3Ge1Zk1mz0O5xhvvQNW2nFkl0H-/view?usp=sharing" target="_blank" class="btn outline-btn">
+                Download CV
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="profile-container animate-fade-in" data-delay="0.4">
+            <div class="profile-frame">
+              <div class="profile-gradient"></div>
+              <div class="profile-border">
+                <div class="profile-inner">
+                  <img src="lovable-uploads/5a7ff5e7-6a15-408d-b14f-aa8182e82e60.png" alt="Gowshik Vasan">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="bg-element-1"></div>
+    <div class="bg-element-2"></div>
+
+    <div class="section-container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+
+      <div class="about-content">
+        <div class="about-text glassmorphism animate-fade-in" data-delay="0.2">
+          <p>
+            I'm Gowshik from Vellore. I recently completed my master's in computer applications from VIT University, and my bachelor's from Vels University. I have a strong foundation in Python, Java, machine learning, and more.
+          </p>
+          <p>
+            Through semester-long academic projects, I've developed hands-on skills in deep learning, teamwork, and applying theory to real-world problems. I'm passionate about solving complex challenges and continuously expanding my knowledge in software development and artificial intelligence.
+          </p>
+        </div>
+
+        <div class="timeline animate-fade-in" data-delay="0.4">
+          <h3 class="sub-heading">Education <span class="heading-underline"></span></h3>
+          
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <div class="icon-container">
+                <div class="pulse"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h4>Master of Computer Applications</h4>
+              <p class="institution">VIT University</p>
+              <p class="year">2022 - 2024</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <div class="icon-container">
+                <div class="pulse"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h4>Bachelor of Computer Applications</h4>
+              <p class="institution">Vels University</p>
+              <p class="year">2019 - 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="particles-container"></div>
+
+    <div class="section-container">
+      <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-item animate-fade-in" data-delay="0.1">
+          <h4 class="skill-name">Python</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="92">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.2">
+          <h4 class="skill-name">Java</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="75">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.3">
+          <h4 class="skill-name">MySQL</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="85">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.4">
+          <h4 class="skill-name">HTML/CSS</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="70">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.5">
+          <h4 class="skill-name">JavaScript</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="70">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.6">
+          <h4 class="skill-name">Git</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="75">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.7">
+          <h4 class="skill-name">Machine Learning</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="80">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item animate-fade-in" data-delay="0.8">
+          <h4 class="skill-name">Deep Learning</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="75">
+              <div class="skill-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="technologies">
+        <h3>Technologies I've Worked With</h3>
+        <div class="tech-badges">
+          <div class="tech-badge animate-fade-in" data-delay="0.1">TensorFlow</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.2">PyTorch</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.3">OpenCV</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.4">Scikit-learn</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.5">Flask</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.6">Pandas</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.7">NumPy</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.8">MongoDB</div>
+          <div class="tech-badge animate-fade-in" data-delay="0.9">React</div>
+          <div class="tech-badge animate-fade-in" data-delay="1.0">Node.js</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="overlay"></div>
+    <div class="bg-shape-1"></div>
+    <div class="bg-shape-2"></div>
+
+    <div class="section-container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+      <div class="projects-grid">
+        <div class="project-card animate-fade-in" data-delay="0.1">
+          <div class="project-card-inner">
+            <div class="card-shine"></div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="lovable-uploads/e85e1c48-cb19-4c9b-a9ad-66e58f7bbc75.png" alt="Plant Disease Detection">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Plant Disease Detection
+                <span class="cursor-blink"></span>
+              </h3>
+              <p class="project-description">
+                Deep learning model using Python to detect plant infections and provide treatment recommendations for farmers.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-fade-in" data-delay="0.2">
+          <div class="project-card-inner">
+            <div class="card-shine"></div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="lovable-uploads/903d0aea-1d29-4de4-af7e-9e642aec88e7.png" alt="Nibbles Game">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <line x1="12" y1="12" x2="12" y2="12"></line>
+                  <path d="M7 12h.01"></path>
+                  <path d="M17 12h.01"></path>
+                  <path d="M2 15h20"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Nibbles Game
+                <span class="cursor-blink"></span>
+              </h3>
+              <p class="project-description">
+                Classic Snake game implemented using Python and Pygame with modern UI and additional game mechanics.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pygame</span>
+                <span class="tech-tag">Object-Oriented Programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-fade-in" data-delay="0.3">
+          <div class="project-card-inner">
+            <div class="card-shine"></div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="lovable-uploads/89ca6c74-f488-4ad5-ab99-8c0697ee8375.png" alt="Virtual Mouse">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
+                  <path d="m13 13 6 6"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Virtual Mouse
+                <span class="cursor-blink"></span>
+              </h3>
+              <p class="project-description">
+                Gesture-controlled mouse using OpenCV and Mediapipe that allows users to control their computer with hand movements.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Mediapipe</span>
+                <span class="tech-tag">PyAutoGUI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-fade-in" data-delay="0.4">
+          <div class="project-card-inner">
+            <div class="card-shine"></div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="lovable-uploads/2ef69b22-c4ae-4cdb-b1da-a1615081db65.png" alt="IPL Score Prediction">
+              <div class="project-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                IPL Score Prediction
+                <span class="cursor-blink"></span>
+              </h3>
+              <p class="project-description">
+                Machine learning model to predict cricket match scores using regression techniques based on historical data.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <h2 class="section-title glow-text">Get In <span class="highlight">Touch</span></h2>
+
+      <div class="contact-content">
+        <div class="contact-cards animate-fade-in" data-delay="0.2">
+          <h3 class="sub-heading">Contact Information <span class="heading-underline"></span></h3>
+
+          <div class="contact-card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="card-content">
+              <p class="label">Phone</p>
+              <p class="value">+91 9566408960</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="card-content">
+              <p class="label">Email</p>
+              <p class="value">gowshikvasan2000@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="card-content">
+              <p class="label">LinkedIn</p>
+              <a href="https://linkedin.com/in/gowshikvasan" class="link" target="_blank">linkedin.com/in/gowshikvasan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container animate-fade-in" data-delay="0.4">
+          <form id="contactForm" class="contact-form glassmorphism">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="stars-container"></div>
+    <div class="gradient-overlay"></div>
+
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Gowshik <span>Vasan</span></h3>
+          <p>MCA Graduate, VIT University</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/gowshikvasan" class="social-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:gowshikvasan2000@gmail.com" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+        
+        <button id="scrollToTop" class="scroll-top-btn">
+          <div class="btn-pulse"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Gowshik Vasan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
