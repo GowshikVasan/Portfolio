@@ -284,3 +284,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+//contact form
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+  e.preventDefault(); // Prevent default form submission (no redirect)
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    document.getElementById("response-msg").innerText = "Thank you! Your message has been sent.";
+    form.reset(); // Optionally reset the form
+  } else {
+    document.getElementById("response-msg").innerText = "Oops! Something went wrong.";
+  }
+});
+

@@ -10,8 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>   
+  <script>
+    window.onload = function () {
+      const form = document.getElementById("form");
+      if (form) {
+        form.reset();
+      }
+    };
+  </script>
 </head>
-<body>
+<body oncontextmenu="return false">
   <!-- Progress Bar -->
   <div class="progress-bar"></div>
 
@@ -108,7 +119,7 @@
               <div class="profile-gradient"></div>
               <div class="profile-border">
                 <div class="profile-inner">
-                  <img src="lovable-uploads/5a7ff5e7-6a15-408d-b14f-aa8182e82e60.png" alt="Gowshik Vasan">
+                  <img src="src\assets\Gowshik.png" alt="Gowshik Vasan" oncontextmenu="return false">
                 </div>
               </div>
             </div>
@@ -293,7 +304,7 @@
             <div class="card-shine"></div>
             <div class="project-image">
               <div class="image-overlay"></div>
-              <img src="lovable-uploads/e85e1c48-cb19-4c9b-a9ad-66e58f7bbc75.png" alt="Plant Disease Detection">
+              <img src="src\assets\plant.png" alt="Plant Disease Detection">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
@@ -324,7 +335,7 @@
             <div class="card-shine"></div>
             <div class="project-image">
               <div class="image-overlay"></div>
-              <img src="lovable-uploads/903d0aea-1d29-4de4-af7e-9e642aec88e7.png" alt="Nibbles Game">
+              <img src="src\assets\nibble.png" alt="Nibbles Game">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="6" width="20" height="12" rx="2"></rect>
@@ -357,7 +368,7 @@
             <div class="card-shine"></div>
             <div class="project-image">
               <div class="image-overlay"></div>
-              <img src="lovable-uploads/89ca6c74-f488-4ad5-ab99-8c0697ee8375.png" alt="Virtual Mouse">
+              <img src="src\assets\gesture.png" alt="Virtual Mouse">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
@@ -388,7 +399,7 @@
             <div class="card-shine"></div>
             <div class="project-image">
               <div class="image-overlay"></div>
-              <img src="lovable-uploads/2ef69b22-c4ae-4cdb-b1da-a1615081db65.png" alt="IPL Score Prediction">
+              <img src="src\assets\ipl.png" alt="IPL Score Prediction">
               <div class="project-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="18" y1="20" x2="18" y2="10"></line>
@@ -468,20 +479,23 @@
         </div>
 
         <div class="contact-form-container animate-fade-in" data-delay="0.4">
-          <form id="contactForm" class="contact-form glassmorphism">
+          <form id="contact-form" class="contact-form glassmorphism">
             <div class="form-field">
+              <input type="hidden" name="access_key" value="070f86fe-7afb-49da-ae8d-cb7eb9d5e380">
+              <input type="hidden" name="subject" value="New Submission from Web3Forms">
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
 
             <div class="form-field">
               <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <input type="email" id="email" name="email" placeholder="Your web address" required>
             </div>
 
             <div class="form-field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
+              <textarea id="message" name="message" placeholder="Your message here!" required></textarea>
             </div>
 
             <button type="submit" class="submit-btn">
@@ -492,6 +506,7 @@
               </svg>
             </button>
           </form>
+          <p id="response-msg"></p>
         </div>
       </div>
     </div>
@@ -532,16 +547,15 @@
           </svg>
         </button>
       </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> Gowshik Vasan. All rights reserved.</p>
-      </div>
     </div>
   </footer>
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> Gowshik Vasan. All rights reserved.</p>
+  </div>
 
   <!-- Toast Notification -->
   <div id="toast"></div>
-
+   
   <script src="script.js"></script>
 </body>
 </html>
